@@ -46,14 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +80,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomerVehicles\" />
+    <Folder Include="Employees\" />
+    <Folder Include="Finance\" />
+    <Folder Include="Inventory\" />
+    <Folder Include="JobCard\" />
+    <Folder Include="Payments\" />
+    <Folder Include="Salary\" />
+    <Folder Include="Supplier\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\2nd.jpg" />
+    <Content Include="Resources\aston.jpg" />
+    <Content Include="Resources\Back.jpg" />
+    <Content Include="Resources\Bugh.jpg" />
+    <Content Include="Resources\car1.jpeg" />
+    <Content Include="Resources\Cool-lamborghini-pictures-wallpaper.jpg" />
+    <Content Include="Resources\Customers.png" />
+    <Content Include="Resources\Employee.png" />
+    <Content Include="Resources\finance.png" />
+    <Content Include="Resources\Inventory icon.png" />
+    <Content Include="Resources\InventoryIcon.png" />
+    <Content Include="Resources\job.png" />
+    <Content Include="Resources\mercedes_amg_gts_cgi_4k-HD.jpg" />
+    <Content Include="Resources\MINI.jpg" />
+    <Content Include="Resources\Payment.png" />
+    <Content Include="Resources\Rasa Motors Logo black.png" />
+    <Content Include="Resources\Rasa Motors Logo.png" />
+    <Content Include="Resources\sal 2.png" />
+    <Content Include="Resources\salary.png" />
+    <Content Include="Resources\Suppliers.png" />
+    <Content Include="Resources\suv.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
