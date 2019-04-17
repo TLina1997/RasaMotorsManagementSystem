@@ -81,17 +81,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="CustomerVehicles\" />
-    <Folder Include="Employees\" />
-    <Folder Include="Finance\" />
-    <Folder Include="Inventory\" />
-    <Folder Include="JobCard\" />
-    <Folder Include="Payments\" />
-    <Folder Include="Salary\" />
-    <Folder Include="Supplier\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="CustomerVehicles\cutomerReadme.txt" />
+    <Content Include="Employees\EmployeeReadme.txt" />
+    <Content Include="Finance\FinanceReadme.txt" />
+    <Content Include="Inventory\InventoryReadme.txt" />
+    <Content Include="JobCard\JobCardReadme.txt" />
+    <Content Include="Payments\PaymentsReadme.txt" />
     <Content Include="Resources\2nd.jpg" />
     <Content Include="Resources\aston.jpg" />
     <Content Include="Resources\Back.jpg" />
@@ -113,6 +110,8 @@
     <Content Include="Resources\salary.png" />
     <Content Include="Resources\Suppliers.png" />
     <Content Include="Resources\suv.jpeg" />
+    <Content Include="Salary\SalaryReadme.txt" />
+    <Content Include="Supplier\SupplierReadme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
